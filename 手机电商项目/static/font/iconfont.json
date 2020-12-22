@@ -1,0 +1,93 @@
+{
+  "id": "1473576",
+  "name": "魅族",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5706",
+      "name": "七天无理由退换货",
+      "font_class": "qitianwuliyoutuihuanhuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "57350",
+      "name": "天猫-顺丰包邮",
+      "font_class": "tianmaoshunfengbaoyou",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "902053",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1092140",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "1328096",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "2076351",
+      "name": "花呗账单",
+      "font_class": "huabeizhangdan",
+      "unicode": "e8af",
+      "unicode_decimal": 59567
+    },
+    {
+      "icon_id": "4272329",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "5922398",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "6318183",
+      "name": "对",
+      "font_class": "dui",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "7149166",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "7366876",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "8575288",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    }
+  ]
+}

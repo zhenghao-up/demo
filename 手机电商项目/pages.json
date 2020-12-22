@@ -1,0 +1,132 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/list/list",
+            "style" : {
+				"navigationBarTitleText": "商品列表"
+				
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "用户登录",
+				
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" : {
+				"navigationBarTitleText": "商品详情"
+			}
+        }
+        ,{
+            "path" : "pages/cate/cate",
+            "style" : {
+				"navigationBarTitleText": "分类"
+			}
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" : {
+				"navigationBarTitleText": "购物车"
+			}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText": "搜索"
+			}
+        }
+        ,{
+            "path" : "pages/buy/buy",
+            "style" : {
+				"navigationBarTitleText": "购买页面"
+			}
+        },
+		{
+		    "path" : "pages/member/index",
+		    "style" : {
+				"navigationBarTitleText": "个人中心",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},
+		
+		{
+		    "path" : "pages/address/index",
+		    "style" : {
+				"navigationBarTitleText": "地址管理"
+			}
+		},
+		
+		{
+		    "path" : "pages/address/add",
+		    "style" : {
+				"navigationBarTitleText": "添加地址"
+			}
+		}
+        ,{
+            "path" : "pages/order/order",
+            "style" : {
+				"navigationBarTitleText": "订单管理"
+			}
+        },
+		{
+		    "path" : "pages/order/detail",
+		    "style" : {
+				"navigationBarTitleText": "订单详情"
+			}
+		}
+        
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#666",
+	    "selectedColor": "#00b4ff",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/image/tabbar1.png",
+	        "selectedIconPath": "static/image/tabbar1-1.png",
+	       "text": "首页"
+	    }, {
+	        "pagePath": "pages/cate/cate",
+	        "iconPath": "static/image/tabbar2.png",
+	        "selectedIconPath": "static/image/tabbar2-1.png",
+	        "text": "分类"
+	    },
+		
+		{
+		    "pagePath": "pages/cart/cart",
+		    "iconPath": "static/image/tabbar3.png",
+		    "selectedIconPath": "static/image/tabbar3-1.png",
+		    "text": "购物车"
+		},
+		{
+		    "pagePath": "pages/member/index",
+		    "iconPath": "static/image/tabbar4.png",
+		    "selectedIconPath": "static/image/tabbar4-1.png",
+		    "text": "我的"
+		}]
+	}
+}

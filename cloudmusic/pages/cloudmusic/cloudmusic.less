@@ -1,0 +1,110 @@
+.root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .tabs {
+    height: 50px;
+    background-color: pink;
+    display: flex;
+
+    .item {
+      line-height: 50px;
+      flex: 1;
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+
+      &.active {
+        color: #fff;
+        border-bottom: 2px solid #e9232c;
+      }
+    }
+  }
+
+
+  .content {
+    flex: 1;
+    background-color: #222;
+    color: #aaa;
+    .slide {
+      height: 273rpx;
+      image {
+        width: 750rpx;
+      }
+    }
+    .portals {
+      display: flex;
+      margin-bottom: 30rpx;
+      margin-top: 30rpx;
+      .item {
+        flex: 1;
+        text-align: center;
+        image {
+          width: 120rpx;
+          height: 120rpx;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .list{
+      .title{
+        margin: 10rpx 20rpx;
+        font-size: 28rpx;
+      }
+      .inner{
+        padding:20rpx;
+        .item{
+          display: inline-block;
+          width: 33.33%;
+          padding: 4rpx;
+          /*
+          盒子模型有两种：
+          1.w3c的盒子模型  content-box  默认
+          2.IE的盒子模型   border-box   特定 padding border不会撑大盒子本身
+          */
+          box-sizing: border-box;
+          font-size: 28rpx;
+          image{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .player {
+    height: 50px;
+    background-color: #17181a;
+    display: flex;
+
+    .poster {
+      image {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        vertical-align: middle;
+      }
+    }
+    .info {
+      flex: 1;
+      color: #888;
+      font-size: 14px;
+      margin: 5px;
+      .title {
+        display: block;
+        font-size: 16px;
+        color: #ccc;
+      }
+    }
+    .controls {
+      image {
+        width: 40px;
+        height: 40px;
+        margin: 5px 2px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "enablePullDownRefresh" : true
+			}
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "登录"
+			}
+        }
+        ,{
+            "path" : "pages/order/home",
+            "style" : {
+			}
+        }
+		
+        ,{
+            "path" : "pages/trail/home",
+            "style" : {}
+        }
+		,{
+		    "path" : "pages/trail/history",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/trail/write",
+		    "style" : {}
+		}
+        ,{
+            "path" : "pages/product/home",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/product/content",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/product/article",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/product/life",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/product/film",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/product/latest",
+		    "style" : {}
+		},
+		{
+			"path":"pages/order/note",
+			"style":{}
+		},
+		{
+			"path":"pages/order/explain",
+			"style":{}
+		}
+        ,{
+            "path" : "pages/write/write",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#0081ff",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "深莞惠"
+	}
+	
+	// "tabBar":{
+	// 	"color":"#707070",
+	// 	"selectedColor" : "#DE533A",
+	// 	"list":[
+	// 		{
+	// 			"pagePath" : "pages/product/home",
+	// 			"text" : "优品",
+	// 			"iconPath" : "static/tabbar/product.png",
+	// 			"selectedIconPath" : "static/tabbar/product-a.png"
+	// 		},
+	// 		{
+	// 			"pagePath" : "pages/trail/home",
+	// 			"text" : "足迹",
+	// 			"iconPath" : "static/tabbar/trail.png",
+	// 			"selectedIconPath" : "static/tabbar/trail-a.png"
+	// 		},
+	// 		{
+	// 			"pagePath" : "pages/order/home",
+	// 			"text" : "预约",
+	// 			"iconPath" : "static/tabbar/order.png",
+	// 			"selectedIconPath" : "static/tabbar/order-a.png"
+	// 		}
+	// 	]
+	// }
+}

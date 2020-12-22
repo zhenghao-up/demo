@@ -1,0 +1,16 @@
+.tabs .tab_item {
+  height: 50px;
+  background-color: pink;
+  display: flex;
+}
+.tabs .tab_item .item {
+  line-height: 50px;
+  flex: 1;
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+}
+.tabs .tab_item .item.active {
+  color: #fff;
+  border-bottom: 2px solid #e9232c;
+}

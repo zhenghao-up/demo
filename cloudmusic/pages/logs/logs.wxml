@@ -1,0 +1,9 @@
+<!-- logs.wxml -->
+<Tabs tabs="{{tabs}}" bindItemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">0000000</block>
+  <block wx:elif="{{tabs[1].isActive}}">111111</block>
+  <block wx:elif="{{tabs[2].isActive}}">222222</block>
+  <block wx:else>333333</block>
+</Tabs>
+
+<button bindtap="save">存数据</button>

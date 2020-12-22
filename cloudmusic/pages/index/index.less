@@ -1,0 +1,75 @@
+/*
+父元素为flex布局时,没有设置高度的子元素与父元素高度一致。
+1，如果父元素设置固定高度，则子元素中没有设置高度的元素将继承父元素的高度；但是如果父元素的**align-items**设置以后那么子元素的高度则会有自身内容决定
+2，如果父元素没有设置高度，其高度由最高的子元素决定。
+*/
+
+.box {
+  .title {
+    width: 100rpx;
+    background-color: pink;
+  }
+  height: 100%;
+  // background-color: green;
+  display: flex; /*当给父亲添加display:flex之后，此时每一个子元素就变成了flex-item*/
+  flex-direction: row; /*flex主轴的方向默认就是row*/
+  /*justify-content 调整元素在主轴的对齐方式
+        flex-start:让子元素从父容器的起始位置开始排列
+        flex-end:让子元素从父容器的结束位置开始排列
+        center:让子元素从父容器的中间位置开始排列
+        space-between:左右对齐父容器的开始和结束，中间平均分页，产生相同的间距
+        space-around:将多余的空间平均的分页在每一个子元素的两边 margin:0 auto.造成中间盒子的间距是左右两边盒子间距的两倍
+  */
+  justify-content: space-around;
+  /*
+  flex-warp : 当我们子盒子内容宽度多于父盒子的时候如何处理
+     wrap: 换行显示
+     nowrap：强制在一行显示(子元素宽度对收缩)
+  */
+  flex-wrap: nowrap;
+  /*
+  align-items: 调整元素在侧轴的对齐方式
+          center:设置在侧轴方向上居中对齐
+        	flex-start:设置在侧轴方向上顶对齐
+        	flex-end:设置在侧轴方向上底对齐
+        	stretch:拉伸：让子元素在侧轴方向上进行拉伸，填充满整个侧轴方向>> 默认值
+        	baseline:文本基线
+  */
+  align-items: center;
+  /*align-content: 调整元素在侧轴的对齐方式，针对多行的情况
+    必须对父元素设置自由盒属性display:flex;，并且设置排列方式为横向排列flex-direction:row;并且设置换行，flex-wrap:wrap;这样align-content属性的设置才会起作用。
+    aliten-items是设置元素在侧轴的对齐方式（单行）。align-content: 调整元素在侧轴的对齐方式(多行)
+    */
+  // align-content:space-around;
+
+  .item {
+    // height: 100px;
+    /* flex:2 
+        等效于
+          flex-grow: 2;     表示占据剩余宽度的1份
+          flex-shrink: 1;   表示占据应收缩宽度的1份
+          flex-basis: 0%;  
+    */
+    // flex-grow:1;
+    width: 100px;
+    &:nth-child(2) {
+      background-color: red;
+      flex-shrink: 2;
+      /*align-self: 调整子元素自己在侧轴的对齐方式（单行有效）*/
+      align-self: flex-end;
+    }
+    &:nth-child(3) {
+      background-color: blue;
+      flex-shrink: 1;
+    }
+    &:nth-child(4) {
+      background-color: yellow;
+      flex-shrink: 1;
+    }
+  }
+}
+
+/*
+总宽度  375 - 100 = 275
+本来3个应该占据 300   应收缩25/4 = 6
+*/

@@ -1,0 +1,13 @@
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+
+<van-button bind:click="showPopup">展示弹出层</van-button>
+<van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+
+<i class="fa fa-play">xxx</i>
+<i class="fa fa-bath"></i>
+
+<button bindtap="getData">获取数据</button>

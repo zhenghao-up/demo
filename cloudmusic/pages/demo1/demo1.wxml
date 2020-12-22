@@ -1,0 +1,25 @@
+<view>
+  <!-- hover-class="none" 去除点击导航按钮的样式 -->
+  <!-- open-type:
+    navigate    打开新页面，新页面会压栈
+    redirect    页面重定向，新页面不会压栈，而是把原来的页面替换掉
+    reLaunch    重新加载指定页面，页面全部出栈，只留下新的页面
+    navigateBack   回到上一个页面
+    switchTab   跳转tabBar页面，并关闭其他所有非 tabBar 页面
+
+    注意点：
+    navigate, redirect 只能打开非 tabBar 页面。
+    switchTab 只能打开 tabBar 页面。
+    reLaunch 可以打开任意页面。 -->
+  <button class="btn" bindtap="goDemo2">跳转demo2</button>
+  <navigator open-type="switchTab" url="/pages/vant/vant" hover-class="none">跳转vant</navigator>
+  <navigator open-type="navigate" url="/pages/demo2/demo2?name=zhangsan&age=12" hover-class="none">
+    跳转demo2
+  </navigator>
+  <navigator open-type="reLaunch" url="/pages/demo2/demo2" hover-class="none">
+    跳转demo2-relaunch
+  </navigator>
+  <navigator open-type="redirect" url="/pages/demo2/demo2" hover-class="none">
+    跳转demo2-redirect
+  </navigator>
+</view>

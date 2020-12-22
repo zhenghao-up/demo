@@ -1,0 +1,97 @@
+.root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.root .tabs {
+  height: 50px;
+  background-color: pink;
+  display: flex;
+}
+.root .tabs .item {
+  line-height: 50px;
+  flex: 1;
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+}
+.root .tabs .item.active {
+  color: #fff;
+  border-bottom: 2px solid #e9232c;
+}
+.root .content {
+  flex: 1;
+  background-color: #222;
+  color: #aaa;
+}
+.root .content .slide {
+  height: 273rpx;
+}
+.root .content .slide image {
+  width: 750rpx;
+}
+.root .content .portals {
+  display: flex;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+.root .content .portals .item {
+  flex: 1;
+  text-align: center;
+}
+.root .content .portals .item image {
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  margin: 0 auto;
+}
+.root .content .list .title {
+  margin: 10rpx 20rpx;
+  font-size: 28rpx;
+}
+.root .content .list .inner {
+  padding: 20rpx;
+}
+.root .content .list .inner .item {
+  display: inline-block;
+  width: 33.33%;
+  padding: 4rpx;
+  /*
+          盒子模型有两种：
+          1.w3c的盒子模型  content-box  默认
+          2.IE的盒子模型   border-box   特定 padding border不会撑大盒子本身
+          */
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.root .content .list .inner .item image {
+  width: 100%;
+}
+.root .player {
+  height: 50px;
+  background-color: #17181a;
+  display: flex;
+}
+.root .player .poster image {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  vertical-align: middle;
+}
+.root .player .info {
+  flex: 1;
+  color: #888;
+  font-size: 14px;
+  margin: 5px;
+}
+.root .player .info .title {
+  display: block;
+  font-size: 16px;
+  color: #ccc;
+}
+.root .player .controls image {
+  width: 40px;
+  height: 40px;
+  margin: 5px 2px;
+  vertical-align: middle;
+}

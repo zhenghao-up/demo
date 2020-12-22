@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cloudmusic/cloudmusic",
+    "pages/vant/vant",
+    "pages/demo1/demo1",
+    "pages/demo2/demo2",
+    "pages/demo3/demo3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [{
+        "pagePath": "pages/cloudmusic/cloudmusic",
+        "text": "音乐"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/vant/vant",
+        "text": "Vant"
+      },
+      {
+        "pagePath": "pages/demo1/demo1",
+        "text": "Demo1"
+      }
+    ]
+  }
+}
